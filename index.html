@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Snake</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+    <link type="text/css" rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <canvas id="snakeCanvas" width="500" height="500"></canvas>
+    <div class="containerScore">
+        <div class="score"><span id="regularScore">1</span></div>
+        <div class="score"><span id="higherScore">0</span><i class="material-icons right" style="color: #ffc400; display: contents;">star</i></div>
+    </div>
+    <div class="menu">
+        <button class="btn waves-effect waves-light green lighten-1" name="start" onclick="start()">Start
+           <i class="material-icons right">play_arrow</i>
+        </button>
+        <button class="btn waves-effect waves-light red lighten-1" name="stop" onclick="stop()">Stop
+           <i class="material-icons right">stop</i>
+        </button>
+        <button class="btn waves-effect waves-light teal lighten-1" name="reset" onclick="resetGame()">Reset
+           <i class="material-icons right">refresh</i>
+        </button>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+    <script src="./index.js"></script>
+</body>
+</html>
